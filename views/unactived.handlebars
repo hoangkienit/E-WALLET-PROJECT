@@ -1,0 +1,33 @@
+<script>
+  function Refresh() {
+    location.reload();
+  }
+</script>
+<div>
+    <h2>Danh sách người dùng chưa active</h2>
+    <br>
+    <button onclick="Refresh()">Refresh</button>
+    <br>
+<table class="table">
+    <tr>
+    <th scope="col" width="25%" style="color: rgb(9, 9, 200);font-family: fantasy">ID</th>
+    <th scope="col" width="25%" style="color: rgb(9, 9, 200);font-family: fantasy">Name</th>
+    <th scope="col" width="25%" style="color: rgb(9, 9, 200); font-family: fantasy">Email</th>
+    <th width="25%" style="color: rgb(9, 9, 200); font-family: fantasy">Status</th>
+    </tr>  
+    {{#each user}}
+    <tr>
+    <td >{{this._id}}</td>
+    <td><a href="">{{this.fullname}}</a></td>
+    <td><a href="">{{this.email}}</a></td>
+    <td><p style="color:red">{{this.status}}</p></td>
+    </tr>
+    {{/each}}
+           
+    {{#if err}}
+      <tr>
+      <td colspan="3">No user</td>
+    </tr> 
+    {{/if}}
+</table>
+</div>

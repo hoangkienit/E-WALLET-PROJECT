@@ -1,0 +1,211 @@
+.left_side {
+    background-color: pink;
+    width: 30%;
+    height: 700px;
+    display: inline-block;
+    border-radius: 20px 0px 0px 20px;
+
+}
+
+.right_side {
+    background-color: aliceblue;
+    width: 70%;
+    display: inline-block;
+    height: 700px;
+    float: right;
+
+    border-radius: 0px 20px 20px 0px;
+}
+.wrapper {
+    
+    width: 70%;
+    box-shadow: 5px 5px 5px midnightblue;
+    border-radius: 20px 20px 20px 20px;
+    margin-top: 15px;
+}
+
+.page_name {
+    width: 100%;
+    height: 100px;
+}
+.logo_img {
+    margin-top: 183px;
+    width: 300px;
+}
+
+.register_label {
+    font-size: 50px;
+    font-family: fantasy;
+    text-shadow: 2px 2px pink;
+    color: darkblue;
+    margin-top: 20px;
+}
+
+.register_form {
+    width: 100%;
+    height: 500px;
+}
+
+.fullname_field {
+
+}
+
+input {
+    width: 400px;
+    padding: 15px;
+    padding-left: 80px;
+    border-radius: 6px;
+    background-color:wheat;
+    border: 2px solid #D2C8C5;
+    margin-top: 20px;
+    display: inline;
+}
+input::placeholder {
+    color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 520;
+}
+input:hover {
+    border: 3px solid darkblue;
+}
+
+button {
+    margin-top: 20px;
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 5px;
+    border: 2px solid #D2C8C5;
+    background-color: pink;
+    color: darkblue;
+    font-family: fantasy;
+    box-shadow: 2px 2px 2px midnightblue;
+}
+button:hover {
+    background-color: darkblue;
+    color: pink;
+}
+
+i {color: darkblue;}
+
+.error_message {
+    background-color: red;
+    color: darkblue;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 15px;
+    border-radius: 14px;
+    border: 2px solid;
+    position: relative;
+    height: 50px;
+}
+.error_icon {
+    font-size: 30px;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 8px;
+    left: 20px;
+    color: #fff;
+}
+
+.error_name {
+    margin-top: 15px;
+    color: #fff;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a {
+    color: darkblue;
+}
+a {
+    background-image: linear-gradient(
+      to right,
+      #54b3d6,
+        darkblue 50%,
+      #000 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a:before {
+    content: '';
+    background: darkblue;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a:hover {
+   background-position: 0;
+  }
+  
+  a:hover::before {
+    width:100%;
+  }
+
+  .copyright {
+    margin-top: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  a { font-weight: 600;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+  .fullname_field {
+    position: relative;
+  }
+  .card_icon {
+    position: absolute;
+    top:40px;
+    left:200px;
+  }
+
+  .email_field {
+    position: relative;
+  }
+
+  .mail_icon {
+    position: absolute;
+    top:40px;
+    left:200px;
+  }
+
+  .phone_field {
+    position: relative;
+  }
+
+  .phone_icon {
+    position: absolute;
+    top:40px;
+    left:200px;
+  }
+
+  .address_field {
+    position: relative;
+  }
+
+  .address_icon {
+    position: absolute;
+    top:40px;
+    left:200px;
+  }
+
+  .date_field {
+    position: relative;
+  }
+
+  .date_icon {
+    position: absolute;
+    top:40px;
+    left:200px;
+  }
+
+  

@@ -1,0 +1,64 @@
+
+<head>
+    <link rel="stylesheet" href="../views/css/login_form.css">
+</head>
+
+<center>
+        <div class="wrapper">
+            <div class="left_side">
+                <img src=".././views/img/e-wallet_logo.png" alt="" class="logo_img">
+            </div>
+    
+            <div class="right_side">
+                <div class="center-outer">
+                <div class="center-inner">
+
+                <div class="page_name">
+                    <label for="" class="login_lable">MENYOO E-WALLET</label>
+                </div>
+
+                <!--Login form-->
+                <div class="login_form">
+                    <form method="post">
+                        <div class="username_field">
+                            <i class="fa fa fa-user user_icon" aria-hidden="true"></i>
+                            <input type="text" name="username" placeholder="Username">
+                            
+                        </div>
+                        
+                        <div class="password_field">
+                            <i class="fa fa-lock pass_icon" aria-hidden="true"></i>
+                            <input type="password" name="password" placeholder="Password">
+                        </div>
+
+                        <div class="login_button_field">
+                            <button>
+                                LOGIN
+                            </button>
+                        </div>
+                        {{#if err}}
+                        <div class="error_message">
+                            <i class="fas fa-exclamation-triangle error_icon" aria-hidden="true"></i>
+                            <label for="" class="error_name">{{msg}}</label>
+                        </div>
+                        {{/if}}
+                    </form>
+                </div>
+
+                <div class="login_footer">
+                    <div class="register">
+                        <a href="/user/register">SIGN UP FOR ACCOUNT HERE</a>
+                        <div class="process_bar"></div>
+                    </div>
+                    <eiv class="pass_recov">
+                        <a href="/user/recovery">PASSWORD RECOVERY</a>
+                    </div>
+                    <div class="copyright">
+                        <span>@Copyright by TDTU 2022</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+{{!-- </body>
+</html> --}}

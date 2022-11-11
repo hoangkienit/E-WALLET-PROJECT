@@ -1,0 +1,16 @@
+<div>
+    <h1>Trang lịch sử giao dịch</h1>
+    <div>
+        <a href="/home/transaction">Giao dịch</a>
+        <a href="/home/pending-transaction">Giao dịch đang chờ xử lí</a>
+    </div>
+    <br>
+    {{#each transaction}}
+    <p>Mã giao dịch: {{this.trading_code}}</p>
+    <p>Loại giao dịch: {{this.transaction_type}}</p>
+    <p>Số tiền: {{this.transaction_money}}</p>
+    <p>Phí giao dịch: {{this.transaction_fee}}</p>
+    <p>Nội dung: {{this.content}}</p>
+    <p>Ngày tạo: {{this.createAt}}</p>
+    {{/each}}
+</div>

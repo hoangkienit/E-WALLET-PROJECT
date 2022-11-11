@@ -1,0 +1,111 @@
+<head>
+    <link rel="stylesheet" href="../../views/css/register_form.css">
+</head>
+<style>
+    .alert {
+        color: red;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .success {
+        width: 50%;
+        font-size: 15px;
+        margin-top: 10px;
+  padding: 20px;
+  background-color: green;
+  color: white;
+  max-height: 40px;
+  border-radius: 5px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border: 2px solid darkblue;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+</style>
+{{!-- <body> --}}
+    <center>
+        <div class="wrapper">
+            <div class="left_side">
+                <img src=".././views/img/e-wallet_logo.png" alt="" class="logo_img">
+            </div>
+    
+            <div class="right_side">
+
+                <div class="page_name">
+                    <p for="" class="register_label">SIGN UP</p>
+                </div>
+
+                <!--Login form-->
+                <div class="register_form">
+                    <form method="post">
+                        <div class="fullname_field">
+                            <i class="fas fa-address-card card_icon" aria-hidden="true"></i>
+                            <input type="text" name="fullname" placeholder="Fullname">
+                        </div>
+
+                        <div class="email_field">
+                            <i class="fas fa-envelope-open mail_icon" aria-hidden="true"></i>
+                            <input type="text" name="email" placeholder="Email">
+                        </div>
+
+                        <div class="phone_field">
+                            <i class="fas fa-phone phone_icon" aria-hidden="true"></i>
+                            <input type="text" name="phone" placeholder="Phone number">
+                        </div>
+
+                        <div class="address_field">
+                            <i class="fas fa-home address_icon" aria-hidden="true"></i>
+                            <input type="text" name="address" placeholder="Address">
+                        </div>
+
+                        <div class="date_field">
+                            <i class="fas fa-calendar-alt date_icon" aria-hidden="true"></i>
+                            <input type="date" name="date_of_birth" placeholder="Date of birth">
+                        </div>
+
+                        
+                        {{!-- <h3 class="alert">*Please capitalize the first letter and no accents </h3> --}}
+                        {{#if err}}
+                        {{!-- <i class="fas fa-exclamation-triangle error_icon" aria-hidden="true"></i> --}}
+                        <label for="" class="alert">{{msg}}</label>
+                        {{/if}}
+
+                        <div class="login_button_field">
+                            <button>
+                                SIGN UP
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="register_footer">
+                    <div class="login">
+                        <a href="/user/login">LOGIN BY ACCOUNT HERE</a>
+                        <div class="process_bar"></div>
+                    </div>
+                    {{!-- {{#if success}}
+                    <div class="success">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                        <strong>{{msg}}</strong>
+                      </div>
+                    {{/if}} --}}
+                    <div class="copyright">
+                        <span>@Copyright by TDTU 2022</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>

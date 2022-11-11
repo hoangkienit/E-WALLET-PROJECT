@@ -1,0 +1,24 @@
+<head>
+    <link rel="stylesheet" href="../views/css/otp_verify.css">
+</head>
+<div class="container">
+    <h2>OTP VERIFY</h2>
+      <p>We emailed you the five digit code to <b>{{email}}</b><br></p>
+      <form action="" method="post">
+        <div class="code-container">
+        <input type="text" class="code" placeholder="0" min="0" max="9" required name="digit_1">
+        <input type="text" class="code" placeholder="0" min="0" max="9" required name="digit_2">
+        <input type="text" class="code" placeholder="0" min="0" max="9" required name="digit_3">
+        <input type="text" class="code" placeholder="0" min="0" max="9" required name="digit_4">
+        <input type="text" class="code" placeholder="0" min="0" max="9" required name="digit_5">
+      </div>
+      <p class="err_msg">{{err_msg}}</p>
+      <br>
+        <button class="verify_btn">Verify</button>
+      </form>
+      <br>
+      <a href="/user/recovery">PREVIOUS PAGE</a>
+      <br>
+      <a href="/user/recovery">LOGIN PAGE</a>
+</div>
+<script src="../utils/otp_code.js"></script>

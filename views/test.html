@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <link rel="icon" type="image/x-icon" href="./img/e-wallet_logo.png">
+        <link rel="stylesheet" href="./css/register_form.css">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+        <link rel="stylesheet" href="../fontawesome-free-5.12.1-web/css/all.css">
+        <title>Document</title>
+    </head>
+    <style>
+        .alert {
+            color: red;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .success {
+            font-size: 20px;
+            margin-top: 10px;
+      padding: 20px;
+      background-color: green;
+      color: white;
+      border-radius: 5px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      border: 2px solid darkblue;
+    }
+    
+    .closebtn {
+      margin-left: 15px;
+      color: white;
+      font-weight: bold;
+      float: right;
+      font-size: 22px;
+      line-height: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    
+    .closebtn:hover {
+      color: black;
+    }
+    </style>
+    <body>
+        <center>
+            <div class="wrapper">
+                <div class="left_side">
+                    <img src=".././views/img/e-wallet_logo.png" alt="" class="logo_img">
+                </div>
+        
+                <div class="right_side">
+    
+                    <div class="page_name">
+                        <label for="" class="register_label">SIGN UP</label>
+                    </div>
+    
+                    <!--Login form-->
+                    <div class="register_form">
+                        <form method="post">
+                            <div class="fullname_field">
+                                <i class="fas fa-address-card card_icon" aria-hidden="true"></i>
+                                <input type="text" name="fullname" placeholder="Fullname">
+                            </div>
+    
+                            <div class="email_field">
+                                <i class="fas fa-envelope-open" aria-hidden="true"></i>
+                                <input type="text" name="email" placeholder="Email">
+                            </div>
+    
+                            <div class="phone_field">
+                                <i class="fas fa-phone" aria-hidden="true"></i>
+                                <input type="text" name="phone" placeholder="Phone number">
+                            </div>
+    
+                            <div class="address_field">
+                                <i class="fas fa-home" aria-hidden="true"></i>
+                                <input type="text" name="address" placeholder="Address">
+                            </div>
+    
+                            <div class="date_field">
+                                <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                                <input type="date" name="date_of_birth" placeholder="Date of birth">
+                            </div>
+    
+                            
+                            <h3 class="alert">*Please capitalize the first letter and no accents </h3>
+    
+                            <div class="login_button_field">
+                                <button>
+                                    SIGN UP
+                                </button>
+                            </div>
+                            {{#if err}}
+                                <div class="error_message">
+                                <i class="fas fa-exclamation-triangle error_icon" aria-hidden="true"></i>
+                                <label for="" class="error_name">{{msg}}</label>
+                            </div>
+                            {{/if}}
+                        </form>
+                    </div>
+    
+                    <div class="register_footer">
+                        <div class="login">
+                            <a href="/user/login">LOGIN BY ACCOUNT HERE</a>
+                            <div class="process_bar"></div>
+                        </div>
+                        {{#if success}}
+                        <div class="success">
+                            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                            <strong>{{msg}}</strong>
+                          </div>
+                        {{/if}}
+                        <div class="copyright">
+                            <span>@Copyright by TDTU 2022</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </center></body>
+    </html>

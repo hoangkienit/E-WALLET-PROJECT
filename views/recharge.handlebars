@@ -1,0 +1,25 @@
+
+<div>
+    <h1>Hello welcome to recharge page</h1>
+    <p class="notification">{{msg}}</p>
+    <br>
+    <br>
+    <form action="" method="post">
+        <p>Card number</p>
+        <input type="text" name="card_number" required>
+        <br>
+        <p>CVV code</p>
+        <input type="text" name="cvv_code" required>
+        <br>
+        <p>Expire date</p>
+        <input type="text" name="expire_date" required>
+        <br>
+        <p>Amount to deposit</p>
+        <input type="number" name="money_amount" required>
+        <br>
+        <button>Deposit money</button>
+    </form>
+    <br>
+    <a href="/home/dashboard">Come back</a>
+    <p style="color: red;">{{err_msg}}</p>
+</div>

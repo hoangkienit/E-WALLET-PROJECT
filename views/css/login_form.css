@@ -1,0 +1,18 @@
+.left_side{background-color: pink;width:30%;height:700px;display:inline-block;border-radius:20px 0px 0px 20px;}
+.right_side{background-color: aliceblue;width: 70%;display: inline-block;height: 700px;float: right;border-radius: 0px 20px 20px 0px;}
+.wrapper {width: 70%;box-shadow: 5px 5px 5px midnightblue;border-radius: 20px 20px 20px 20px;margin-top: 15px;}.logo_img {margin-top: 183px;width: 300px;}
+.login_lable {font-family: fantasy;font-size: 70px;color: darkblue;text-shadow: 2px 2px pink;margin-top: 120px;}.login_form {width: 400px;height: 300px;}
+input {width: 400px;padding: 15px;padding-left: 80px;border-radius: 6px;background-color:wheat;border: 2px solid #D2C8C5;margin-top: 20px;display: inline;float: right;}
+input::placeholder {color: darkblue;font-family: Arial, Helvetica, sans-serif;font-weight: 520;}input:hover {border: 3px solid darkblue;}
+button {margin-top: 20px;padding: 15px;padding-left: 40px;padding-right: 40px;border-radius: 5px;border: 2px solid #D2C8C5;background-color: pink;color: darkblue;font-family: fantasy;box-shadow: 2px 2px 2px midnightblue;}
+button:hover {background-color: darkblue;color: pink;}.user_icon {width: 15px;height: 15px;;position: absolute;top:38px;left: 30px;color: darkblue;}
+.pass_icon {width: 15px;height: 15px;;position: absolute;top:110px;left: 30px;color: darkblue;}.username_field {margin-top: 60px;position: relative;}.password_field {position: relative;}
+.error_message {background-color: red;color: darkblue;font-family: 'Times New Roman', Times, serif;margin-top: 15px;border-radius: 14px;border: 2px solid;position: relative;height: 50px;}
+.error_icon {font-size: 30px;width: 15px;height: 15px;position: absolute;top: 8px;left: 20px;color: #fff;} .login_footer {width: 550px;transition: border 5s;}
+.error_name {font-size: 10px;margin-top: 15px;color: #fff;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+.register {display: block;float: left;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-weight: 600;}
+.register:hover {animation: process 5s infinite;}.process_bar {animation: process 5s infinite;}a {color: darkblue;}
+a {background-image: linear-gradient(to right, #54b3d6, darkblue 50%,#000 50%);background-size: 200% 100%;background-position: -100%;display: inline-block;padding: 5px 0;position: relative;-webkit-background-clip: text;-webkit-text-fill-color: transparent;transition: all 0.3s ease-in-out;}
+a:before {content: '';background: darkblue;display: block;position: absolute;bottom: -3px;left: 0;width: 0;height: 3px;transition: all 0.3s ease-in-out;}a:hover {background-position: 0;}a:hover::before {width:100%}
+.pass_recov{display:block;float:right;font-family:'Lucida Sans','Lucida Sans Regular','Lucida Grande','Lucida Sans Unicode',Geneva,Verdana,sans-serif;font-weight:600;}
+.copyright{margin-top:50px;font-family:'Lucida Sans','Lucida Sans Regular','Lucida Grande','Lucida Sans Unicode',Geneva,Verdana,sans-serif;}
